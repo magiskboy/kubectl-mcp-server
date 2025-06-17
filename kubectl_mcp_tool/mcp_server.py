@@ -835,7 +835,7 @@ class MCPServer:
     async def serve_sse(self, port: int):
         """Serve the MCP server over SSE transport."""
         logger.info(f"Starting MCP server with SSE transport on port {port}")
-        await self.server.run_sse_async(port=port)
+        await self.server.run_sse_async()
         
 if __name__ == "__main__":
     import asyncio
